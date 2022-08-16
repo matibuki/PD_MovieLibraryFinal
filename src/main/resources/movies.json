@@ -1,0 +1,156 @@
+{
+  "movie": {
+    "id": 1,
+    "title": "Chlopaki nie placza",
+    "directorName": "Olaf",
+    "directorSurname": "Lubaszenko",
+    "genre": "comedy",
+    "date": "25-02-2000",
+    "actors:": [
+      {
+        "actorName": "Cezary",
+        "actorSurname": "Pazura"
+      },
+      {
+        "actorName": "Maciej",
+        "actorSurname": "Stuhr"
+      },
+      {
+        "actorName": "Michal",
+        "actorSurname": "Milowicz"
+      }
+    ]
+  },
+  "movie": {
+    "id": 2,
+    "title": "Dzien swira",
+    "directorName": "Marek",
+    "directorSurname": "Koterski",
+    "genre": "comedy",
+    "date": "07-06-2002",
+    "actors:": [
+      {
+        "actorName": "Marek",
+        "actorSurname": "Kondrat"
+      },
+      {
+        "actorName": "Marek",
+        "actorSurname": "Koterski"
+      },
+      {
+        "actorName": "Andrzej",
+        "actorSurname": "Grabowski"
+      }
+    ]
+  },
+  "movie": {
+    "id": 3,
+    "title": "The Godfather",
+    "directorName": "Francis",
+    "directorSurname": "Copolla",
+    "genre": "drama",
+    "date": "01-01-1972",
+    "actors:": [
+      {
+        "actorName": "Marlon",
+        "actorSurname": "Brando"
+      },
+      {
+        "actorName": "Al",
+        "actorSurname": "Pacino"
+      },
+      {
+        "actorName": "James",
+        "actorSurname": "Caan"
+      }
+    ]
+  },
+  "movie": {
+    "id": 4,
+    "title": "Random title",
+    "directorName": "Tomek",
+    "directorSurname": "Romek",
+    "genre": "thriller",
+    "date": "01-01-2010",
+    "actors:": [
+      {
+        "actorName": "Kasia",
+        "actorSurname": "Izo"
+      },
+      {
+        "actorName": "Alina",
+        "actorSurname": "Kowalska"
+      },
+      {
+        "actorName": "Basia",
+        "actorSurname": "Nowak"
+      }
+    ]
+  },
+  "movie": {
+    "id": 5,
+    "title": "Random title 2 - return",
+    "directorName": "Tomek",
+    "directorSurname": "Wajda",
+    "genre": "thriller",
+    "date": "01-01-2012",
+    "actors:": [
+      {
+        "actorName": "Ilona",
+        "actorSurname": "Izo"
+      },
+      {
+        "actorName": "Michal",
+        "actorSurname": "Kowalska"
+      },
+      {
+        "actorName": "Arek",
+        "actorSurname": "Nowak"
+      }
+    ]
+  },
+  "movie": {
+    "id": 6,
+    "title": "Random title 4 - return of the return",
+    "directorName": "Andrzej",
+    "directorSurname": "Wajda",
+    "genre": "cartoon",
+    "date": "01-01-2012",
+    "actors:": [
+      {
+        "actorName": "Andrzej",
+        "actorSurname": "Izo"
+      },
+      {
+        "actorName": "Jerzy",
+        "actorSurname": "Kowalska"
+      },
+      {
+        "actorName": "Ilona",
+        "actorSurname": "Nowak"
+      }
+    ]
+  },
+  "movie": {
+    "id": 7,
+    "title": "I am out of titles",
+    "directorName": "Sir",
+    "directorSurname": "Lancelot",
+    "genre": "cartoon",
+    "date": "01-01-2021",
+    "actors:": [
+      {
+        "actorName": "Michael",
+        "actorSurname": "Corleone"
+      },
+      {
+        "actorName": "Tom",
+        "actorSurname": "Corleone"
+      },
+      {
+        "actorName": "Dwan",
+        "actorSurname": "Corleone"
+      }
+    ]
+  }
+}

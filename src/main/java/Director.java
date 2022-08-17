@@ -1,4 +1,4 @@
-public class Director extends Actor {
+public class Director {
     private boolean isDirector;
 
     public boolean isDirector() {

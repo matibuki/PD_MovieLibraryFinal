@@ -1,0 +1,24 @@
+{
+  "movie": {
+    "id": 1,
+    "title": "Chlopaki nie placza",
+    "directorName": "Olaf",
+    "directorSurname": "Lubaszenko",
+    "genre": "comedy",
+    "date": "25-02-2000",
+    "actors:": [
+      {
+        "actorName": "Cezary",
+        "actorSurname": "Pazura"
+      },
+      {
+        "actorName": "Maciej",
+        "actorSurname": "Stuhr"
+      },
+      {
+        "actorName": "Michal",
+        "actorSurname": "Milowicz"
+      }
+    ]
+  }
+}

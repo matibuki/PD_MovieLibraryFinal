@@ -17,6 +17,11 @@ public class Actor {
     public void setSurname(String surname) {
         this.surname = surname;
     }
+
+    public Actor (String name, String surname) {
+        this.name = name;
+        this.surname = surname;
+    }
 }
 
 

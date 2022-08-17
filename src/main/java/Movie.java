@@ -1,4 +1,6 @@
 public class Movie {
+
+
     private String title;
     Director director;
     private String genre;
@@ -9,24 +11,31 @@ public class Movie {
         return title;
     }
 
+    public String getGenre() {
+        return genre;
+    }
+
+    public int getDate() {
+        return date;
+    }
     public void setTitle(String title) {
         this.title = title;
     }
 
-    public String getGenre() {
-        return genre;
+    public void setDirector(Director director) {
+        this.director = director;
     }
 
     public void setGenre(String genre) {
         this.genre = genre;
     }
 
-    public int getDate() {
-        return date;
-    }
-
     public void setDate(int date) {
         this.date = date;
+    }
+
+    public void setActors(Actor actors) {
+        this.actors = actors;
     }
 
     public Movie(String title, Director director, String genre, int date, Actor actors) {
@@ -36,8 +45,5 @@ public class Movie {
         this.date = date;
         this.actors = actors;
     }
-
-
-
 
 }

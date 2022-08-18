@@ -1,158 +1,163 @@
-{
-  "movie": [
-    {
-      "id": 1,
-      "title": "Chlopaki nie placza",
+[
+  {
+    "title": "Chlopaki nie placza",
+    "director": {
       "directorName": "Olaf",
-      "directorSurname": "Lubaszenko",
-      "genre": "comedy",
-      "date": "25-02-2000",
-      "actors:": [
-        {
-          "actorName": "Cezary",
-          "actorSurname": "Pazura"
-        },
-        {
-          "actorName": "Maciej",
-          "actorSurname": "Stuhr"
-        },
-        {
-          "actorName": "Michal",
-          "actorSurname": "Milowicz"
-        }
-      ]
+      "directorSurname": "Lubaszenko"
     },
-    {
-      "id": 2,
-      "title": "Dzien swira",
+    "genre": "comedy",
+    "date": "25-02-2000",
+    "actors": [
+      {
+        "name": "Cezary",
+        "surname": "Pazura"
+      },
+      {
+        "name": "Maciej",
+        "surname": "Stuhr"
+      },
+      {
+        "name": "Michal",
+        "surname": "Milowicz"
+      }
+    ]
+  },
+  {
+    "title": "Dzien swira",
+    "director": {
       "directorName": "Marek",
-      "directorSurname": "Koterski",
-      "genre": "comedy",
-      "date": "07-06-2002",
-      "actors:": [
-        {
-          "actorName": "Marek",
-          "actorSurname": "Kondrat"
-        },
-        {
-          "actorName": "Marek",
-          "actorSurname": "Koterski"
-        },
-        {
-          "actorName": "Andrzej",
-          "actorSurname": "Grabowski"
-        }
-      ]
+      "directorSurname": "Koterski"
     },
-    {
-      "id": 3,
-      "title": "The Godfather",
+    "genre": "comedy",
+    "date": "07-06-2002",
+    "actors": [
+      {
+        "name": "Marek",
+        "surname": "Kondrat"
+      },
+      {
+        "name": "Marek",
+        "surname": "Koterski"
+      },
+      {
+        "name": "Andrzej",
+        "surname": "Grabowski"
+      }
+    ]
+  },
+  {
+    "title": "The Godfather",
+    "director": {
       "directorName": "Francis",
-      "directorSurname": "Copolla",
-      "genre": "drama",
-      "date": "01-01-1972",
-      "actors:": [
-        {
-          "actorName": "Marlon",
-          "actorSurname": "Brando"
-        },
-        {
-          "actorName": "Al",
-          "actorSurname": "Pacino"
-        },
-        {
-          "actorName": "James",
-          "actorSurname": "Caan"
-        }
-      ]
+      "directorSurname": "Copolla"
     },
-    {
-      "id": 4,
-      "title": "Random title",
+    "genre": "drama",
+    "date": "01-01-1972",
+    "actors": [
+      {
+        "name": "Marlon",
+        "surname": "Brando"
+      },
+      {
+        "name": "Al",
+        "surname": "Pacino"
+      },
+      {
+        "name": "James",
+        "surname": "Caan"
+      }
+    ]
+  },
+  {
+    "title": "Random title",
+    "director": {
       "directorName": "Tomek",
-      "directorSurname": "Romek",
-      "genre": "thriller",
-      "date": "01-01-2010",
-      "actors:": [
-        {
-          "actorName": "Kasia",
-          "actorSurname": "Izo"
-        },
-        {
-          "actorName": "Alina",
-          "actorSurname": "Kowalska"
-        },
-        {
-          "actorName": "Basia",
-          "actorSurname": "Nowak"
-        }
-      ]
+      "directorSurname": "Romek"
     },
-    {
-      "id": 5,
-      "title": "Random title 2 - return",
+    "genre": "thriller",
+    "date": "01-01-2010",
+    "actors": [
+      {
+        "name": "Kasia",
+        "surname": "Izo"
+      },
+      {
+        "name": "Alina",
+        "surname": "Kowalska"
+      },
+      {
+        "name": "Basia",
+        "surname": "Nowak"
+      }
+    ]
+  },
+  {
+    "title": "Random title 2 - return",
+    "director": {
       "directorName": "Tomek",
-      "directorSurname": "Wajda",
-      "genre": "thriller",
-      "date": "01-01-2012",
-      "actors:": [
-        {
-          "actorName": "Ilona",
-          "actorSurname": "Izo"
-        },
-        {
-          "actorName": "Michal",
-          "actorSurname": "Kowalska"
-        },
-        {
-          "actorName": "Arek",
-          "actorSurname": "Nowak"
-        }
-      ]
+      "directorSurname": "Wajda"
     },
-    {
-      "id": 6,
-      "title": "Random title 4 - return of the return",
+    "genre": "thriller",
+    "date": "01-01-2012",
+    "actors": [
+      {
+        "name": "Ilona",
+        "surname": "Izo"
+      },
+      {
+        "name": "Michal",
+        "surname": "Kowalska"
+      },
+      {
+        "name": "Arek",
+        "surname": "Nowak"
+      }
+    ]
+  },
+  {
+    "title": "Random title 4 - return of the return",
+    "director": {
       "directorName": "Andrzej",
-      "directorSurname": "Wajda",
-      "genre": "cartoon",
-      "date": "01-01-2012",
-      "actors:": [
-        {
-          "actorName": "Andrzej",
-          "actorSurname": "Izo"
-        },
-        {
-          "actorName": "Jerzy",
-          "actorSurname": "Kowalska"
-        },
-        {
-          "actorName": "Ilona",
-          "actorSurname": "Nowak"
-        }
-      ]
+      "directorSurname": "Wajda"
     },
-    {
-      "id": 7,
-      "title": "I am out of titles",
+    "genre": "cartoon",
+    "date": "01-01-2012",
+    "actors": [
+      {
+        "name": "Andrzej",
+        "surname": "Izo"
+      },
+      {
+        "name": "Jerzy",
+        "surname": "Kowalska"
+      },
+      {
+        "name": "Ilona",
+        "surname": "Nowak"
+      }
+    ]
+  },
+  {
+    "title": "I am out of titles",
+    "director": {
       "directorName": "Sir",
-      "directorSurname": "Lancelot",
-      "genre": "cartoon",
-      "date": "01-01-2021",
-      "actors:": [
-        {
-          "actorName": "Michael",
-          "actorSurname": "Corleone"
-        },
-        {
-          "actorName": "Tom",
-          "actorSurname": "Corleone"
-        },
-        {
-          "actorName": "Dwan",
-          "actorSurname": "Corleone"
-        }
-      ]
-    }
-  ]
-}
+      "directorSurname": "Lancelot"
+    },
+    "genre": "cartoon",
+    "date": "01-01-2021",
+    "actors": [
+      {
+        "name": "Michael",
+        "surname": "Corleone"
+      },
+      {
+        "name": "Tom",
+        "surname": "Corleone"
+      },
+      {
+        "name": "Dwan",
+        "surname": "Corleone"
+      }
+    ]
+  }
+]

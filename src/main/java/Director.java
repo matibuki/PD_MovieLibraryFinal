@@ -1,21 +1,28 @@
-public class Director extends Actor{
-    private boolean isDirector;
+public class Director {
+    private String directorName;
+    private String directorSurname;
 
-    private String name;
-    private String surname;
-
-    public boolean isDirector() {
-        return isDirector;
+    public String getDirectorName() {
+        return directorName;
     }
 
-    public void setDirector(boolean isDirector) {
-        this.isDirector = isDirector;
-    }
-    public Director (String name, String surname, boolean isDirector) {
-        super(name, surname);
-        this.isDirector = isDirector;
+    public void setDirectorName(String directorName) {
+        this.directorName = directorName;
     }
 
+    public String getDirectorSurname() {
+        return directorSurname;
+    }
+
+    public void setDirectorSurname(String directorSurname) {
+        this.directorSurname = directorSurname;
+    }
+
+
+    public Director(String directorName, String directorSurname) {
+        this.directorName = directorName;
+        this.directorSurname = directorSurname;
+    }
 
 
 }

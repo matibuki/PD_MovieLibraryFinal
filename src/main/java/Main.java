@@ -1,11 +1,14 @@
-import java.io.IOException;
+import java.lang.reflect.Array;
+import java.lang.reflect.Type;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.JsonNode;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
 
 public class Main {
     public static String readFileAsString(String file) throws Exception {
@@ -13,37 +16,52 @@ public class Main {
     }
 
     public static void main(String[] args) throws Exception {
-        String file = "src/main/resources/movies2.json";
+        String file = "src/main/resources/movies.json";
         String movieJson = readFileAsString(file);
 
-        ObjectMapper objectMapper = new ObjectMapper();
-        JsonNode jsonNode = objectMapper.readTree(movieJson);
-        Utils utils = new Utils();
+        Gson gson = new Gson();
+        Type movieListType = new TypeToken<ArrayList<Movie>>() {
+        }.getType();
 
-        System.out.println(utils.extractStringFromJson(););
-
-//        Movie movie = new Movie(extractStringFromJson() +
-//                getdirector() +
-//                extractStringFromJson() +
-//                extractStringFromJson() +
-//                extractStringFromJson()
-//                );
+        List<Movie> movieList = gson.fromJson(movieJson, movieListType);
 
 
-//        Movie movie = objectMapper.readValue(movieJson, Movie.class);
-//        System.out.println(movie.getTitle());
+        String menuList = ("""
+
+                Choose what to do:\s
+
+                1 – Please enter two dates to print movies
+
+                2 – Print random movie
+                                
+                3 – Please give actor name and surname
+
+                4 – End program""");
+
+        while (true) {
+            System.out.println(menuList);
+            int menuOption = getIntFromUser();
+            switch (menuOption) {
+                default -> System.out.println(menuList);
+                case 1 -> System.out.println();
+                case 2 -> printRandomMovie(movieList);
+//                case 3 -> company.addEmplyoee(helper.getEmployeeFromUser());
+                case 4 -> System.exit(0);
+            }
 
 
-        int totalMoviesCount = 6;
-
-        for (int i = 0; i < totalMoviesCount; i++) {
-            System.out.println("Movielist");
         }
+    }
 
+    public static int getIntFromUser() {
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextInt();
+    }
 
-        Director director1 = new Director("tomek", "atomek", true);
-        List<Movie> movies = new ArrayList<>();
-        movies.add(new Movie("asd", director1, "drama", "asd", utils.)
+    public static void printRandomMovie(List<Movie> movieList) {
+        int i = 1;
+        System.out.println(movieList.get(i).getTitle());
+        System.out.println(movieList.get(i).getDirector().getDirectorName() + movieList.get(i).getDirector().getDirectorName());
 
     }
 }

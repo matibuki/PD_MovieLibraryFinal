@@ -1,46 +1,57 @@
-//import com.fasterxml.jackson.databind.ObjectMapper;
-//import com.fasterxml.jackson.databind.JsonNode;
-
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.List;
+import java.util.Objects;
+import java.util.Random;
+import java.util.Scanner;
+import java.util.Date;
 
 public class Utils {
-//    private JsonNode jsonNode;
-    private List<Actor> actorsInMovieList;
-//
-//
-//    public Movie addNewMovie() {
-//        String title = jsonNode.get("movie").get("title").toString();
-//        Director director = addNewDirector();
-//        String genre = jsonNode.get("movie").get("genre").toString();
-//        String date = jsonNode.get("movie").get("date").toString();
-//        addActorToMovie(addNewActor());
-//        return new Movie(title, director, genre, date, actorsInMovieList);
-//    }
-//
-//    public Actor addNewActor() {
-////        String name = getJsonValue();
-//        JsonNode
-//        JsonNode array1 = jsonNode.get
-//        String name = jsonNode.get("movie").get("actors").as;
-//        String surname = getJsonValue();
-//        return new Actor(name, surname);
-//    }
-//
-//    public void addActorToMovie(Actor actor) {
-//        actorsInMovieList.add(actor);
-//    }
-//
-//    public Director addNewDirector() {
-////        String name = getJsonValue();
-//        String name = jsonNode.get("movie").get("directorName").toString();
-////        String surname = getJsonValue();
-//        String surname = jsonNode.get("movie").get("directorSurname").toString();
-//        boolean isDirector = true;
-//        return new Director(name, surname, isDirector);
-//    }
-//
-//    public String getJsonValue() {
-//
-//        return "name"; // TODO
-//    }
+    public static void printRandomMovie(List<Movie> movieList) {
+        int i = new Random().nextInt(movieList.size());
+        System.out.println("Title: " + movieList.get(i).getTitle());
+        System.out.println("Director: " + movieList.get(i).getDirector().getDirectorName() + " " +
+                movieList.get(i).getDirector().getDirectorSurname());
+        System.out.println("Genre: " + movieList.get(i).getGenre());
+        System.out.println("Date: " + movieList.get(i).getDate());
+        System.out.println("Actors: ");
+        for (Actor a : movieList.get(i).getActors()) {
+            System.out.println(a.toString());
+        }
+    }
+
+    public static int getMenuOptionFromUser() {
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextInt();
+    }
+
+    public static String getStringDataFromUser() {
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextLine();
+    }
+
+    public static void searchActor(List<Movie> movieList) {
+        System.out.println("Please provide actor name and surname");
+        String getActorName = getStringDataFromUser();
+        for (Movie movie : movieList) {
+            for (Actor actor : movie.getActors()) {
+                if (Objects.equals(getActorName, actor.toString())) {
+                    System.out.println(movie.getTitle());
+                }
+            }
+        }
+    }
+
+    public static void findMovieBetweenDates(List<Movie> movieList) throws ParseException {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+        System.out.println("Please provide two dates in format DD-MM-YYYY");
+        Date date1 = dateFormat.parse(getStringDataFromUser());
+        Date date2 = dateFormat.parse(getStringDataFromUser());
+        for (Movie movie : movieList) {
+            Date date3 = dateFormat.parse(movie.getDate());
+            if ((date1.compareTo(date3) * date3.compareTo(date2)) > 0) {
+                System.out.println(movie.getTitle());
+            }
+        }
+    }
 }

@@ -2,12 +2,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Movie {
-    private String title;
+    private final String title;
     Director director;
-    private String genre;
-    //    private int date;
-    private String date;
-    private List<Actor> actors;
+    private final String genre;
+    private final String date;
+    private final List<Actor> actors;
 
     public String getTitle() {
         return title;
@@ -25,24 +24,9 @@ public class Movie {
         return director;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public List<Actor> getActors() {
+        return actors;
     }
-
-    public void setDirector(Director director) {
-        this.director = director;
-    }
-
-    public void setGenre(String genre) {
-        this.genre = genre;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
-    }
-
-//    public void getActor(Actor actor)
-
 
     public Movie(String title, Director director, String genre, String date, ArrayList<Actor> actors) {
         this.title = title;

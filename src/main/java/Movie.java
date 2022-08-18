@@ -1,11 +1,17 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Movie {
 
 
     private String title;
     Director director;
     private String genre;
-    private int date;
-    private Actor actors;
+    //    private int date;
+    private String date;
+//    private Actor actors;
+
+    private List<Actor> actorsInMovieList;
 
     public String getTitle() {
         return title;
@@ -15,9 +21,10 @@ public class Movie {
         return genre;
     }
 
-    public int getDate() {
+    public String getDate() {
         return date;
     }
+
     public void setTitle(String title) {
         this.title = title;
     }
@@ -30,7 +37,7 @@ public class Movie {
         this.genre = genre;
     }
 
-    public void setDate(int date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
@@ -38,12 +45,15 @@ public class Movie {
         this.actors = actors;
     }
 
-    public Movie(String title, Director director, String genre, int date, Actor actors) {
+    public Movie(String title, Director director, String genre, String date, List<Actor> actorsInMovieList) {
         this.title = title;
         this.director = director;
         this.genre = genre;
         this.date = date;
-        this.actors = actors;
+        this.actorsInMovieList = new ArrayList<Actor>();
+    }
+
+
     }
 
 }

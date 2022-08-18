@@ -7,27 +7,21 @@ public class Utils {
     private JsonNode jsonNode;
     private List<Actor> actorsInMovieList;
 
-    public void extractStringFromJson() {
-        Movie newMovie = Movie();
-
-    }
 
     public Movie addNewMovie() {
-        String title = jsonNode.get("movie").get("title").textValue();
-        Director director = jsonNode.get("movie").get("directorName").textValue();
-        Director director = jsonNode.get("movie").get("directorSurname").textValue();
-        String genre = jsonNode.get("movie").get("genre").textValue();
-        String date = jsonNode.get("movie").get("date").textValue();
-
-
-        String actorName = jsonNode.get("movie").get("actors").get("actorName").textValue();
-        String actorSurname = jsonNode.get("movie").get("actors").get("actorSurname").textValue();
-
-        return new Movie(title, director, genre, date, actor);
+        String title = jsonNode.get("movie").get("title").toString();
+        Director director = addNewDirector();
+        String genre = jsonNode.get("movie").get("genre").toString();
+        String date = jsonNode.get("movie").get("date").toString();
+        addActorToMovie(addNewActor());
+        return new Movie(title, director, genre, date, actorsInMovieList);
     }
 
-    public Actor addNewActor(Actor actor) {
-        String name = getJsonValue();
+    public Actor addNewActor() {
+//        String name = getJsonValue();
+        JsonNode
+        JsonNode array1 = jsonNode.get
+        String name = jsonNode.get("movie").get("actors").as;
         String surname = getJsonValue();
         return new Actor(name, surname);
     }
@@ -36,7 +30,17 @@ public class Utils {
         actorsInMovieList.add(actor);
     }
 
+    public Director addNewDirector() {
+//        String name = getJsonValue();
+        String name = jsonNode.get("movie").get("directorName").toString();
+//        String surname = getJsonValue();
+        String surname = jsonNode.get("movie").get("directorSurname").toString();
+        boolean isDirector = true;
+        return new Director(name, surname, isDirector);
+    }
+
     public String getJsonValue() {
-        return "name";
+
+        return "name"; // TODO
     }
 }

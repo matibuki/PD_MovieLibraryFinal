@@ -10,8 +10,7 @@ public class Utils {
     public static void printRandomMovie(List<Movie> movieList) {
         int i = new Random().nextInt(movieList.size());
         System.out.println("Title: " + movieList.get(i).getTitle());
-        System.out.println("Director: " + movieList.get(i).getDirector().getDirectorName() + " " +
-                movieList.get(i).getDirector().getDirectorSurname());
+        System.out.println("Director: " + movieList.get(i).getDirector().toString());
         System.out.println("Genre: " + movieList.get(i).getGenre());
         System.out.println("Date: " + movieList.get(i).getDate());
         System.out.println("Actors: ");

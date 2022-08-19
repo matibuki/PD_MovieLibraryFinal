@@ -1,17 +1,10 @@
-public class Director {
-    private final String directorName;
-    private final String directorSurname;
-
-    public String getDirectorName() {
-        return directorName;
+public class Director extends Actor {
+    public Director(String name, String surname) {
+        super(name, surname);
     }
 
-    public String getDirectorSurname() {
-        return directorSurname;
-    }
-
-    public Director(String directorName, String directorSurname) {
-        this.directorName = directorName;
-        this.directorSurname = directorSurname;
+    @Override
+    public String toString() {
+        return this.name + " " + this.surname;
     }
 }

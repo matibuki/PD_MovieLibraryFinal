@@ -1,7 +1,8 @@
 public class Actor {
-    private final String name;
-    private final String surname;
-    public Actor (String name, String surname) {
+    final String name;
+    final String surname;
+
+    public Actor(String name, String surname) {
         this.name = name;
         this.surname = surname;
     }

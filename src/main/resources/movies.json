@@ -2,8 +2,8 @@
   {
     "title": "Chlopaki nie placza",
     "director": {
-      "directorName": "Olaf",
-      "directorSurname": "Lubaszenko"
+      "name": "Olaf",
+      "surname": "Lubaszenko"
     },
     "genre": "comedy",
     "date": "25-02-2000",
@@ -25,8 +25,8 @@
   {
     "title": "Dzien swira",
     "director": {
-      "directorName": "Marek",
-      "directorSurname": "Koterski"
+      "name": "Marek",
+      "surname": "Koterski"
     },
     "genre": "comedy",
     "date": "07-06-2002",
@@ -48,8 +48,8 @@
   {
     "title": "The Godfather",
     "director": {
-      "directorName": "Francis",
-      "directorSurname": "Copolla"
+      "name": "Francis",
+      "surname": "Copolla"
     },
     "genre": "drama",
     "date": "01-01-1972",
@@ -71,8 +71,8 @@
   {
     "title": "Random title",
     "director": {
-      "directorName": "Tomek",
-      "directorSurname": "Romek"
+      "name": "Tomek",
+      "surname": "Romek"
     },
     "genre": "thriller",
     "date": "01-01-2010",
@@ -94,8 +94,8 @@
   {
     "title": "Random title 2 - return",
     "director": {
-      "directorName": "Tomek",
-      "directorSurname": "Wajda"
+      "name": "Tomek",
+      "surname": "Wajda"
     },
     "genre": "thriller",
     "date": "01-01-2012",
@@ -117,8 +117,8 @@
   {
     "title": "Random title 4 - return of the return",
     "director": {
-      "directorName": "Andrzej",
-      "directorSurname": "Wajda"
+      "name": "Andrzej",
+      "surname": "Wajda"
     },
     "genre": "cartoon",
     "date": "01-01-2012",
@@ -140,8 +140,8 @@
   {
     "title": "I am out of titles",
     "director": {
-      "directorName": "Sir",
-      "directorSurname": "Lancelot"
+      "name": "Sir",
+      "surname": "Lancelot"
     },
     "genre": "cartoon",
     "date": "01-01-2021",

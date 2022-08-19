@@ -2,8 +2,8 @@
   "movie": {
     "id": 1,
     "title": "Chlopaki nie placza",
-    "directorName": "Olaf",
-    "directorSurname": "Lubaszenko",
+    "name": "Olaf",
+    "surname": "Lubaszenko",
     "genre": "comedy",
     "date": "25-02-2000",
     "actors:": [
